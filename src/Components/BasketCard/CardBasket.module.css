@@ -1,0 +1,144 @@
+:root { font-family: 'Inter', sans-serif; }
+@supports (font-variation-settings: normal) {
+    :root { font-family: 'Inter var', sans-serif; }
+}
+
+.basCard{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    width: 264px;
+    height: 512px;
+    left: 1255px;
+    top: 190px;
+    border-color: white;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.cardTitle{
+    width: 224px;
+    height: 24px;
+    left: 1275px;
+    top: 210px;
+
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+
+    /* black */
+
+    color: #000000;
+}
+
+.cardText{
+    width: 224px;
+    height: 19px;
+    left: 1275px;
+    top: 264px;
+    padding-bottom: 10px;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+
+    /* black */
+
+    color: #000000;
+}
+
+.orderButton{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 10px 20px;
+    gap: 10px;
+
+    width: 161px;
+    height: 39px;
+    left: 1307px;
+    top: 644px;
+
+    /* red */
+
+    background: #F05654 !important;
+    border-radius: 10px;
+}
+
+.buttonText{
+    width: 121px;
+    height: 19px;
+
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19px;
+
+    /* white */
+
+    color: #FFFFFF;
+
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.cardFood{
+    width: 115px;
+    height: 17px;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    /* identical to box height */
+
+
+    /* black */
+
+    color: #000000;
+}
+
+.foodSection{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.food{
+
+
+}
+
+.addFood{
+    width: 9.95px;
+    height: 9.95px;
+
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.buttonsAdd{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 4.52381px;
+    gap: 9.05px;
+
+    width: 51.05px;
+    height: 19px;
+    left: 1384px;
+    top: 293px;
+}
