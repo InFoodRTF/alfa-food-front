@@ -16,12 +16,14 @@ export const CardBasket = () => {
             <div>
                 <Card.Text className={styles.cardText}>Обед</Card.Text>
                 <section className={styles.foodSection}>
+                    <div className={styles.food}>
                         <Card.Subtitle className={styles.cardFood}><p>Каша овсяная</p></Card.Subtitle>
                         <div className={styles.buttonsAdd}>
-                            <Button variant={''} bsPrefix={''} className={styles.addFood}>-</Button>
+                            <Button variant={''} bsPrefix={''} className={styles.addFood}><p className={styles.minus}>-</p></Button>
                             <p>1</p>
-                            <Button variant={''} bsPrefix={''} className={styles.addFood}>+</Button>
+                            <Button variant={''} bsPrefix={''} className={styles.addFood}><p className={styles.plus}>+</p></Button>
                         </div>
+                    </div>
                     <Card.Subtitle className={styles.cardFood}><p>Чай черный</p></Card.Subtitle>
                 </section>
             </div>
