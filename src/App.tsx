@@ -3,6 +3,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import Navibar from "./Components/Navbar/Navibar";
 import CardFood from "./Components/FoodCard/CardFood";
 import CardBasket from "./Components/BasketCard/CardBasket";
+import "./index.css"
 
 
 function App() {
@@ -15,8 +16,10 @@ function App() {
       </head>
       <body style={{background:"#F8F8F8"}}>
         <Navibar/>
-        <CardFood/>
-        <CardBasket/>
+        <div style={{display: "flex", flexDirection: "row"}}>
+            <CardFood/>
+            <CardBasket/>
+        </div>
       </body>
       </html>
   );
