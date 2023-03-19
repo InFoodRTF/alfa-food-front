@@ -1,11 +1,11 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
-import Navibar from "./Components/Navbar/Navibar";
-import CardFood from "./Components/FoodCard/CardFood";
-import CardBasket from "./Components/BasketCard/CardBasket";
+import {Navibar} from "./Components/Navbar/Navibar";
+import {CardFood} from "./Components/FoodCard/CardFood";
+import {CardBasket} from "./Components/BasketCard/CardBasket";
 import "./index.css"
 import {FilterFoodItem} from "./Components/FilterFoodItem/FilterFoodItem";
-import LeftMenu from "./Components/LeftMenuItem/LeftMenu";
+import {LeftMenu} from "./Components/LeftMenuItem/LeftMenu";
 
 
 function App() {
@@ -22,10 +22,17 @@ function App() {
             <LeftMenu/>
             <div style={{display: "flex", flexDirection: "column", gap: "20px"}}>
                 <FilterFoodItem/>
-                <div style={{display: "flex", flexDirection: "row", gap: "20px"}}>
-                    <CardFood/>
-                    <CardFood/>
-                    <CardFood/>
+                <div style={{display: "flex", flexDirection: "column", gap: "20px"}}>
+                    <div style={{display: "flex", flexDirection: "row", gap: "20px"}}>
+                        <CardFood/>
+                        <CardFood/>
+                        <CardFood/>
+                    </div>
+                    <div style={{display: "flex", flexDirection: "row", gap: "20px"}}>
+                        <CardFood/>
+                        <CardFood/>
+                        <CardFood/>
+                    </div>
                 </div>
             </div>
             <CardBasket/>

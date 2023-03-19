@@ -5,9 +5,10 @@ import exit from "./Img/r_m_exit.png";
 import logo from "./Img/Mask group.png";
 
 
-export const Navibar = () => {
-    return (
-        <Navbar collapseOnSelect expand={"lg"} className={styles.navbarCustom}>
+export class Navibar extends React.Component{
+    render() {
+        return (
+            <Navbar collapseOnSelect expand={"lg"} className={styles.navbarCustom}>
                 <Nav.Item className={styles.navBrand}>
                     <Navbar.Brand className={styles.brand}><Image src={logo}></Image></Navbar.Brand>
                     <p className={styles.textBrand}>Школьное Питание</p>
@@ -20,7 +21,7 @@ export const Navibar = () => {
                     <Nav.Item className={styles.navItemProfile}><Nav.Link className={styles.navLinkProfile}>Профиль</Nav.Link></Nav.Item>
                     <Nav.Item className={styles.navItemExit}><Nav.Link><Image src={exit}></Image></Nav.Link></Nav.Item>
                 </Nav.Item>
-        </Navbar>
-    )
+            </Navbar>
+        )
+    }
 }
-export default Navibar
