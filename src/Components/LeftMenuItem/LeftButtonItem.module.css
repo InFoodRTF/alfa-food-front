@@ -6,16 +6,18 @@
     background: white !important;
     text-align: left;
     border-radius: 10px;
-}
-
-.buttonText{
     font-family: 'Inter', sans-serif;
     font-style: normal;
     font-weight: 600;
     font-size: 16px;
-    color: black;
+    color: black !important;
     flex: none;
     order: 0;
     flex-grow: 0;
     margin: 0;
+}
+
+.red{
+    background-color: #F05654 !important;
+    color: white !important;
 }

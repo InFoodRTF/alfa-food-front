@@ -18,7 +18,15 @@ function App() {
       </head>
       <body style={{background:"#F8F8F8"}}>
         <Navibar/>
-        <div style={{display: "flex", flexDirection: "row", gap: "20px", paddingLeft: "400px", paddingTop: "76px"}}>
+        <div style={{
+            display: "flex",
+            flexDirection: "row",
+            gap: "20px",
+            width: "1119px",
+            marginTop: "70px",
+            marginLeft: "auto",
+            marginRight: "auto"
+        }}>
             <LeftMenu/>
             <div style={{display: "flex", flexDirection: "column", gap: "20px"}}>
                 <FilterFoodItem/>

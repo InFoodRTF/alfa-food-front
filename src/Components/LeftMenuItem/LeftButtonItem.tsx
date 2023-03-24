@@ -3,10 +3,12 @@ import styles from "./LeftButtonItem.module.css";
 import {Button} from "react-bootstrap";
 
 
-export const LeftButtonItem = ({h = 0, w = 0, text = ""}) => {
+export const LeftButtonItem = ({h = 0, w = 0, text = "", classEl = "", funBtn = function () {
+
+}}) => {
     return(
-        <Button variant={''} bsPrefix={''} className={styles.orderButton} style={{width: `${w}px`, height: `${h}px`}}>
-            <p className={styles.buttonText}>{text}</p>
+        <Button variant={''} bsPrefix={''} className={classEl} style={{width: `${w}px`, height: `${h}px`}}>
+           {text}
         </Button>
     )
 }

@@ -91,33 +91,27 @@
     bottom: 24.17%;
 }
 
-.navItemFood{
+.red{
+    background: #F05654 !important;
+    color: #FFFFFF !important;
+}
+
+.navItem{
     display: flex;
     flex-direction: row;
-    align-items: flex-start;
+    align-items: center;
     justify-content: center;
     text-align: center;
     padding: 10px 20px;
     gap: 10px;
-    width: 200px;
+    width: 220px;
     height: 42px;
 
 
     /* red */
-
-    background: #F05654 !important;
     border-radius: 10px;
 
     /* Inside auto layout */
-
-    flex: none;
-    order: 0;
-    flex-grow: 0;
-}
-
-.navLinkFood {
-    width: 200px;
-    height: 22px;
     font-family: 'Inter', sans-serif;
     font-style: normal;
     font-weight: 600;
@@ -128,69 +122,12 @@
 
     /* white */
 
-    color: #FFFFFF !important;
-
-
-    /* Inside auto layout */
-
-    flex: none;
-    order: 0;
-    flex-grow: 0;
-}
-
-
-.navLinkFood:hover {
-    color: #FFFFFF !important;
-}
-
-.navLinkFood:active {
-    color: #FFFFFF !important;
-}
-
-.navLinkOrder{
-    width: 180px;
-    height: 22px;
-    text-align: center;
-    font-family: 'Inter', sans-serif;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 18px;
-    line-height: 22px;
-    /* identical to box height */
-
-
-    /* black */
-
-    color: #000000;
-
-
-    /* Inside auto layout */
-
-    flex: none;
-    order: 0;
-    flex-grow: 0;
-}
-
-.navLinkOrder:hover{
     color: black;
-}
-
-.navItemOrder{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-
-    width: 200px;
-    height: 42px;
-
-
-    /* Inside auto layout */
 
     flex: none;
-    order: 1;
     flex-grow: 0;
+    /* Inside auto layout */
+
 }
 
 .navItemProfile{
