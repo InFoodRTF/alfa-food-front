@@ -22,7 +22,7 @@ export class LeftMenu extends React.Component {
                     {
                         leftButtons.map((btn) =>
                             <Button variant={''} bsPrefix={''} className={btn.classEl} onClick={changeClass}
-                                    value={btn.text} style={{width: `${btn.width}px`, height: `${btn.height}px`}}>
+                                     style={{width: `${btn.width}px`, height: `${btn.height}px`}}>
                                 {btn.text}
                             </Button>)
                     }
