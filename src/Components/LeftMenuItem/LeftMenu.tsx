@@ -1,6 +1,6 @@
 import React from "react";
 import {Calendar} from "../Calendar/Calendar";
-import {leftButtons} from "../../const";
+import {leftMenuButtons} from "../../const";
 import styles from "./LeftButtonItem.module.css";
 import {Button} from "react-bootstrap";
 
@@ -20,7 +20,7 @@ export class LeftMenu extends React.Component {
                 <Calendar/>
                 <div style={{display: "flex", flexDirection: "column", gap: "20px"}}>
                     {
-                        leftButtons.map((btn) =>
+                        leftMenuButtons.map((btn) =>
                             <Button variant={''} bsPrefix={''} className={btn.classEl} onClick={changeClass}
                                      style={{width: `${btn.width}px`, height: `${btn.height}px`}}>
                                 {btn.text}

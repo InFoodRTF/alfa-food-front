@@ -1,20 +1,8 @@
 import styles from "./Components/LeftMenuItem/LeftButtonItem.module.css";
 import classes from "./Components/FilterFoodItem/ButItem.module.css";
 
-export class getChildOrder {
-    width: number
-    height: number
-    text: string
-    classEl: string
-    constructor(buttonW: number, buttonH: number, buttonT: string, buttonCl: string) {
-        this.width = buttonW
-        this.height = buttonH
-        this.text = buttonT
-        this.classEl = buttonCl
-    }
-}
 
-export const leftButtons = [
+export const leftMenuButtons = [
     {
         width: 265,
         height: 49,
