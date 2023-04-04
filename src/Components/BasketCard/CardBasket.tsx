@@ -28,7 +28,7 @@ export class CardBasket extends React.Component{
                     <Card.Title className={styles.cardTitle} style={{width: "140px", height: "24px", textAlign: "right", marginBottom: "0px"}}>130 рублей</Card.Title>
                 </div>
                 <div style={{position: "absolute", textAlign: "center", width: "264px", bottom: "19px"}}>
-                    <Button variant={''} bsPrefix={''} className={styles.orderButton}><p className={styles.buttonText}>К оформлению</p></Button>
+                    <Button variant={''} bsPrefix={''} className={styles.orderButton}>К оформлению</Button>
                 </div>
             </Card>
         )

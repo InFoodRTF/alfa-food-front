@@ -1,21 +1,34 @@
-import React, {useState} from "react";
-import LeftButtonItem from "./LeftButtonItem";
+import React from "react";
 import {Calendar} from "../Calendar/Calendar";
-import {getChildOrder} from "../../utils";
+import {leftButtons} from "../../const";
 import styles from "./LeftButtonItem.module.css";
+import {Button} from "react-bootstrap";
 
-
-export class LeftMenu extends React.Component{ //создать массив из кнопок и через объекты менять class на onClick
+export class LeftMenu extends React.Component {
     render() {
-        return(
+        const changeClass = (event: any) => {
+            const buttons = document.querySelectorAll('Button')
+            for (let i = 0; i < buttons.length; i++) {
+                if (buttons[i].classList.contains(styles.red)) {
+                    buttons[i].classList.remove(styles.red)
+                }
+            }
+            event.currentTarget.classList.toggle(styles.red)
+        }
+        return (
             <div style={{display: "flex", flexDirection: "column", gap: "52px"}}>
                 <Calendar/>
                 <div style={{display: "flex", flexDirection: "column", gap: "20px"}}>
-                    <LeftButtonItem w={265} h={49} text={"Иванов Иван Петрович"} classEl={[styles.orderButton, styles.red].join(" ")}/>
-                    <LeftButtonItem w={265} h={49} text={"Иванов Дмитрий Петрович"} classEl={styles.orderButton}/>
-                    <LeftButtonItem w={265} h={49} text={"Иванова Яна Петровна"} classEl={styles.orderButton}/>
+                    {
+                        leftButtons.map((btn) =>
+                            <Button variant={''} bsPrefix={''} className={btn.classEl} onClick={changeClass}
+                                    value={btn.text} style={{width: `${btn.width}px`, height: `${btn.height}px`}}>
+                                {btn.text}
+                            </Button>)
+                    }
                 </div>
             </div>
         )
     }
 }
+

@@ -3,7 +3,13 @@ import {Button, Card} from "react-bootstrap";
 import styles from "./Food.module.css";
 
 
-export class Food extends React.Component {
+export class Food extends React.Component<{}, {count: number}> {
+    constructor(props: any) {
+        super(props)
+        this.state = {
+            count: 1
+        }
+    }
     render() {
         return (
             <div className={styles.food}>
@@ -16,12 +22,14 @@ export class Food extends React.Component {
                     gap: "9px",
                     alignItems: "center"
                 }}>
-                    <Button variant={''} bsPrefix={''} className={styles.addFood}
+                    <Button variant={''} bsPrefix={''} className={styles.addFood} onClick={() => this.state.count > 1 ?
+                        this.setState({ count: this.state.count - 1 }) : this.setState({ count: this.state.count})}
                             style={{padding: "0px", alignItems: "center"}}>
                         <p className={styles.smallButton}>-</p>
                     </Button>
-                    <p className={styles.addFood} style={{width: "5px", height: "11px", marginBottom: "0px"}}>1</p>
-                    <Button variant={''} bsPrefix={''} className={styles.addFood}
+                    <p className={styles.addFood} style={{width: "5px", height: "11px", marginBottom: "0px"}}>{this.state.count}</p>
+                    <Button variant={''} bsPrefix={''} className={styles.addFood} onClick={() => this.state.count < 9 ?
+                        this.setState({ count: this.state.count + 1 }) : this.setState({ count: this.state.count})}
                             style={{padding: "0px", margin: "0px"}}>
                         <p className={styles.smallButton}>+</p>
                     </Button>
