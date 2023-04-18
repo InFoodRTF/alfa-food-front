@@ -19,7 +19,7 @@ export class LeftMenu extends React.Component {
             <div style={{display: "flex", flexDirection: "column", gap: "52px"}}>
                 <Calendar/>
                 <div style={{display: "flex", flexDirection: "column", gap: "20px"}}>
-                    {
+                    {// вывод первой кнопки отдельно с классом .red и потом вывод массива кнопок без этого класса
                         leftMenuButtons.map((btn) =>
                             <Button variant={''} bsPrefix={''} className={btn.classEl} onClick={changeClass}
                                      style={{width: `${btn.width}px`, height: `${btn.height}px`}}>

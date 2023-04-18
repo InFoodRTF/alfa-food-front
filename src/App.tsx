@@ -1,12 +1,8 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
-import {Navibar} from "./Components/Navbar/Navibar";
-import {CardFood} from "./Components/FoodCard/CardFood";
-import {CardBasket} from "./Components/BasketCard/CardBasket";
+import "bootstrap/dist/js/bootstrap.min.js";
 import "./index.css"
-import {FilterFoodItem} from "./Components/FilterFoodItem/FilterFoodItem";
-import {LeftMenu} from "./Components/LeftMenuItem/LeftMenu";
-import {AdaptNavbar} from "./Components/TestAdapt/AdaptNavbar";
+import {AdaptNavbar} from "./Components/TestAdapt/AdaptNavbar/AdaptNavbar";
 
 
 function App() {
