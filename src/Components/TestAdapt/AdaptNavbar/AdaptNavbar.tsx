@@ -41,8 +41,8 @@ export class AdaptNavbar extends React.Component{
         }
 
         return (
-            <nav className={"navbar navbar-expand-md"}>
-                <div className={"container"}>
+            <nav className={`navbar navbar-expand-md bg-white ${styles.nav}`}>
+                <div className={`container ${styles.navContainer}`}>
                     <button className={`d-md-none ${styles.navbarToggler}`} type={"button"} data-bs-toggle={"collapse"}
                             data-bs-target={"#navbarContent"} aria-controls={"navbarContent"} aria-expanded={"false"}>
                         <Image src={menu}/>
@@ -53,7 +53,7 @@ export class AdaptNavbar extends React.Component{
                     </div>
                     <a href={""} className={"d-md-none"}><Image src={basket}></Image></a>
                     <div className={"collapse navbar-collapse"} id={"navbarContent"}>
-                        <ul className={"navbar-nav gap-md-5 m-auto"}>
+                        <ul className={"navbar-nav gap-md-2 gap-xl-5 m-auto"}>
                             <li className={"nav-item"}>
                                 <a href={""} className={`nav-link ${styles.navItem} ${styles.red} d-md-flex d-none`}
                                    id={'order'} onClick={orderMeals}>Заказать питание</a>
@@ -76,7 +76,7 @@ export class AdaptNavbar extends React.Component{
                             </li>
                         </ul>
                     </div>
-                    <div className={`d-md-flex d-none ${styles.navBlockRight}`}>
+                    <div className={`d-md-flex d-none gap-xl-5 gap-md-2 ${styles.navBlockRight}`}>
                         <a href={""} className={`nav-link ${styles.navItemProfile}`}>Профиль</a>
                         <a href={""} className={`nav-link ${styles.navItemExit}`}><Image src={exit}></Image></a>
                     </div>

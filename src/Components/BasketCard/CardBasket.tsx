@@ -7,7 +7,7 @@ import {Food} from "./Food";
 export class CardBasket extends React.Component{
     render() {
         return(
-            <Card className={styles.basCard}>
+            <Card className={`d-md-flex d-none ${styles.basCard}`}>
                 <Card.Title style={{position: "absolute", top: "20px", left: "20px", marginBottom: "0", width: "224px", height: "24px"}}>
                     <p className={styles.cardTitle}>Корзина</p>
                 </Card.Title>

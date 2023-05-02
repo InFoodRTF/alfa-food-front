@@ -16,7 +16,7 @@ export class LeftMenu extends React.Component {
             event.currentTarget.classList.toggle(styles.red)
         }
         return (
-            <div style={{display: "flex", flexDirection: "column", gap: "52px"}}>
+            <div className={"d-md-flex d-none"} style={{display: "flex", flexDirection: "column", gap: "52px"}}>
                 <Calendar/>
                 <div style={{display: "flex", flexDirection: "column", gap: "20px"}}>
                     {// вывод первой кнопки отдельно с классом .red и потом вывод массива кнопок без этого класса

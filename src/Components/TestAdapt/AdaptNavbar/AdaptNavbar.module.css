@@ -2,6 +2,14 @@ li {
     cursor: pointer;
 }
 
+.nav{
+    height: 120px !important;
+}
+
+.navContainer{
+    width: 1110px;
+}
+
 .textBrand{
     width: 103px;
     height: 48px;
@@ -52,7 +60,6 @@ li {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    gap: 20px;
 }
 
 .navItemProfile{
