@@ -33,7 +33,7 @@ export class TeacherPage extends React.Component{
                                 <SearchCard/>
                                 <TickCard/>
                                 <TickCard/>
-                                <div style={{ width: "642px", paddingTop: "10px", textAlign: "center"}}>
+                                <div style={{width: "642px", paddingTop: "10px", textAlign: "center"}}>
                                     <BaseButItem w={218} h={39} text={"Сохранить изменения"}/>
                                 </div>
                             </div>
