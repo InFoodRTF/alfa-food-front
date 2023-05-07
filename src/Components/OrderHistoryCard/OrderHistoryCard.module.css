@@ -43,4 +43,42 @@
 
 .Date {
     display: flex;
+    justify-content: left;
+}
+
+.DescriptionText {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.FoodItem {
+    width: 150px;
+
+    color: #000000;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+
+    margin-left: 70px;
+}
+
+.FoodItemCount {
+    width: 35px;
+    color: #BDBDBD;
+
+    margin-left: auto;
+    margin-left: auto;
+}
+
+.FoodItemPrice {
+
+    width: 100px;
+
+    color: #000000;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+
+    margin-left: auto;
 }
