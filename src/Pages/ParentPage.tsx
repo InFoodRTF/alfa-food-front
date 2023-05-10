@@ -15,7 +15,7 @@ return (
             <title>Школьное питание</title>
         </head>
         <body style={{background:"#F8F8F8"}}>
-            <Navibar/>
+            <Navibar leftButtonText={"Заказать питание"} rightButtonText={"Посмотреть заказы"}/>
             <div style={{
             display: "flex",
             flexDirection: "row",

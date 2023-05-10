@@ -5,7 +5,7 @@ import exit from "./Img/r_m_exit.png";
 import logo from "./Img/Mask group.png";
 
 
-export class Navibar extends React.Component{
+export class Navibar extends React.Component<{leftButtonText: any, rightButtonText: any}>{
     render() {
         const orderMeals = () => {
             const order = document.getElementById('order')
@@ -34,8 +34,8 @@ export class Navibar extends React.Component{
                             <p className={styles.textBrand}>Школьное Питание</p>
                         </Nav.Item>
                         <Nav.Item className={styles.navBlock}>
-                            <Nav.Link className={[styles.navItem, styles.red].join(' ')} id={'order'} onClick={orderMeals}>Заказать питание</Nav.Link>
-                            <Nav.Link className={styles.navItem} id={'watch'} onClick={orderWatch}>Посмотреть заказы</Nav.Link>
+                            <Nav.Link className={[styles.navItem, styles.red].join(' ')} id={'order'} onClick={orderMeals}>{this.props.leftButtonText}</Nav.Link>
+                            <Nav.Link className={styles.navItem} id={'watch'} onClick={orderWatch}>{this.props.rightButtonText}</Nav.Link>
                         </Nav.Item>
                     </Nav.Item>
                     <Nav.Item className={styles.navBlockRight}>

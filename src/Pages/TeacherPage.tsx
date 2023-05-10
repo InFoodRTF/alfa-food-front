@@ -4,7 +4,8 @@ import {TickCard} from "../Components/TickCard/TickCard";
 import styles from "./TeacherStyles.module.css";
 import {SearchCard} from "../Components/SearchCard/SearchCard";
 import {BaseButItem} from "../Components/BaseButton/BaseButItem";
-import {NavibarTeacher} from "../Components/NavbarTeacher/NavibarTeacher";
+import {FilterFoodItem} from "../Components/FilterFoodItem/FilterFoodItem";
+import {Navibar} from "../Components/Navbar/Navibar";
 
 export class TeacherPage extends React.Component{
     render() {
@@ -16,7 +17,7 @@ export class TeacherPage extends React.Component{
                     <title>Школьное питание</title>
                 </head>
                 <body style={{background:"#F8F8F8"}}>
-                    <NavibarTeacher/>
+                    <Navibar leftButtonText={"Отметить класс"} rightButtonText={"Выгрузить отчет"}/>
                     <div style={{
                         display: "flex",
                         flexDirection: "row",
@@ -27,9 +28,10 @@ export class TeacherPage extends React.Component{
                         marginRight: "auto"
                     }}>
                         <LeftMenu/>
-                        <div style={{display: "flex", flexDirection: "column", gap: "20px"}}>
+                        <div style={{display: "flex", flexDirection: "column", gap: "20px", paddingTop: "2.5px"}}>
                             <p className={styles.markClass}>Отметить класс</p>
-                            <div style={{display: "flex", flexDirection: "column", gap: "20px"}}>
+                            <FilterFoodItem/>
+                            <div style={{display: "flex", flexDirection: "column", gap: "20px", paddingTop: "2.5px"}}>
                                 <SearchCard/>
                                 <TickCard/>
                                 <TickCard/>

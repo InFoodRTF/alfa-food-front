@@ -2,7 +2,7 @@ import React from "react";
 import styles from "./TickCard.module.css";
 import {Card} from "react-bootstrap";
 
-export class TickCard extends React.Component{//у каждой галочки должен быть уникальный id, например фио
+export class TickCard extends React.Component{//у каждой галочки должен быть уникальный id, например фио в поля "id" и "htmlFor"
     render() {
         return(
             <Card className={styles.foodCard}>
