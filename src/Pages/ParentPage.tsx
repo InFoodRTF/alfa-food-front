@@ -4,6 +4,7 @@ import {FilterFoodItem} from "../Components/FilterFoodItem/FilterFoodItem";
 import {CardFood} from "../Components/FoodCard/CardFood";
 import {CardBasket} from "../Components/BasketCard/CardBasket";
 import React from "react";
+import {Footer} from "../Components/Footer/Footer";
 
 export class ParentPage extends React.Component{
     render() {
@@ -17,13 +18,15 @@ return (
         <body style={{background:"#F8F8F8"}}>
             <Navibar leftButtonText={"Заказать питание"} rightButtonText={"Посмотреть заказы"}/>
             <div style={{
-            display: "flex",
-            flexDirection: "row",
-            gap: "20px",
-            width: "1119px",
-            marginTop: "70px",
-            marginLeft: "auto",
-            marginRight: "auto"
+                display: "flex",
+                flexDirection: "row",
+                gap: "20px",
+                width: "1119px",
+                marginTop: "70px",
+                marginLeft: "auto",
+                marginRight: "auto",
+                paddingBottom: "60px",
+                minHeight: "580px"
             }}>
                 <LeftMenu/>
                 <div style={{display: "flex", flexDirection: "column", gap: "20px"}}>
@@ -43,6 +46,7 @@ return (
                 </div>
                 <CardBasket/>
             </div>
+            <Footer/>
         </body>
     </html>
     )

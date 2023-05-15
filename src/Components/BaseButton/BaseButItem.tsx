@@ -3,11 +3,13 @@ import styles from "./BaseButItem.module.css";
 import {Button} from "react-bootstrap";
 
 
-export const BaseButItem = ({w = 0, h = 0, text = ""}) => {
-    return(
-        <Button variant={''} bsPrefix={''} className={styles.orderButton} style={{width: `${w}px`, height: `${h}px`}}>
-            {text}
-        </Button>
-    )
+export class BaseButItem extends React.Component<{w: any, h: any, text: any}>{
+    render() {
+        return(
+            <Button variant={''} bsPrefix={''} className={styles.orderButton} style={{width: `${this.props.w}px`, height: `${this.props.h}px`}}>
+                {this.props.text}
+            </Button>
+        )
+    }
 }
 

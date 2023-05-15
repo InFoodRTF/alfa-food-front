@@ -2,7 +2,7 @@ import React from "react";
 import {Nav, Navbar, Image} from "react-bootstrap";
 import styles from "./Navibar.module.css";
 import exit from "./Img/r_m_exit.png";
-import logo from "./Img/Mask group.png";
+import logo from "./Img/Maskgroup.png";
 
 
 export class Navibar extends React.Component<{leftButtonText: any, rightButtonText: any}>{
