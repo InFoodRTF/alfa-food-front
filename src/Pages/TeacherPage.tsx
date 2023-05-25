@@ -2,6 +2,7 @@ import {LeftMenu} from "../Components/LeftMenuItem/LeftMenu";
 import React from "react";
 import {TickCard} from "../Components/TickCard/TickCard";
 import styles from "./TeacherStyles.module.css";
+import buttonStyles from "../Components/BaseButton/BaseButItem.module.css";
 import {SearchCard} from "../Components/SearchCard/SearchCard";
 import {BaseButItem} from "../Components/BaseButton/BaseButItem";
 import {FilterFoodItem} from "../Components/FilterFoodItem/FilterFoodItem";
@@ -38,7 +39,7 @@ export class TeacherPage extends React.Component{
                                     <SearchCard/>
                                     <TickCard/>
                                     <div style={{width: "642px", paddingTop: "10px", textAlign: "center"}}>
-                                        <BaseButItem w={218} h={39} text={"Сохранить изменения"}/>
+                                        <BaseButItem w={218} h={39} style={buttonStyles.orderButton} text={"Сохранить изменения"}/>
                                     </div>
                                 </div>
                             </div>

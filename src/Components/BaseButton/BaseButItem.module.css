@@ -19,3 +19,25 @@
     border-color: #F2726F !important;
     color: #FFFFFF !important;
 }
+
+.cardButton{
+    border-radius: 10px;
+    background: #E8E8E8;
+    border-color: #E8E8E8;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19px;
+    color: #000000;
+}
+
+.cardButton:hover{
+    background: #E8E8E8;
+    border-color: #E8E8E8;
+}
+
+.cardButton:active{
+    background: #D6D6D6 !important;
+    border-color: #D6D6D6 !important;
+}
