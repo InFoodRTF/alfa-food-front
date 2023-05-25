@@ -8,8 +8,8 @@ export class TickCard extends React.Component{//у каждой галочки �
             <Card className={styles.foodCard}>
                 <div className={styles.cardBlock}>
                     <div className={styles.infBlock}>
-                        <input type={"checkbox"} id={"student"}></input>
-                        <label htmlFor={"student"}></label>
+                        <input type={"checkbox"} id={"student"} className={styles.InputField}></input>
+                        <label htmlFor={"student"} className={styles.InputLabel}></label>
                     </div>
                     <div className={styles.addInfBlock}>
                         <p className={styles.textAdd}>Архипов Марк Никитич</p>

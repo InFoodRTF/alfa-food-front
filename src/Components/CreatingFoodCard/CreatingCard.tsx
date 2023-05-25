@@ -1,7 +1,7 @@
 import React from "react";
 import {Button, Card} from "react-bootstrap";
 import styles from "./CreatingCard.module.css";
-import addImage from "./Rectangle34.png";
+import addImage from "./NewFood.svg";
 
 
 export class CreatingCard extends React.Component{

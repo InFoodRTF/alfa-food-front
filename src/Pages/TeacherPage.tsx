@@ -44,7 +44,7 @@ export class TeacherPage extends React.Component{
                                 </div>
                             </div>
                         </div>
-                        <Footer/>
+                        <Footer firstButtonText={"Отметить класс"} secondButtonText={""}/>
                 </body>
             </html>
         )

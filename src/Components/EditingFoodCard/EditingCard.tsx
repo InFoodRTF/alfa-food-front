@@ -1,9 +1,9 @@
 import React from "react";
 import {Button, Card} from "react-bootstrap";
 import styles from "./EditingCard.module.css";
-import food from "./Img/Food.png";
-import edit from "./Img/Edit.png";
-import del from "./Img/Delete.png";
+import food from "./Img/Food.svg";
+import edit from "./Img/Edit.svg";
+import del from "./Img/Delete.svg";
 
 
 export class EditingCard extends React.Component{

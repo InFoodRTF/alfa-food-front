@@ -1,7 +1,7 @@
 import React from "react";
 import {Button, Card} from "react-bootstrap";
 import styles from "./CardFood.module.css";
-import food from "./Rectangle 34.png";
+import food from "./FoodCard.svg";
 
 
 export class CardFood extends React.Component{

@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "./SearchCard.module.css"
 import {Card, Image} from "react-bootstrap";
-import find from "./Vector.png";
+import find from "./Search.svg";
 
 
 export class SearchCard extends React.Component{

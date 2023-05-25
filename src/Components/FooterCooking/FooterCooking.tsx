@@ -1,12 +1,12 @@
 import React from "react";
 import {Nav, Image, ModalFooter} from "react-bootstrap";
-import styles from "./Footer.module.css";
+import styles from "./FooterCooking.module.css";
 import logo from "./Img/LogoFooter.svg";
 import urfu from "./Img/Urfu.svg";
 import teamproject from "./Img/TeamProj.png";
 
 
-export class Footer extends React.Component<{firstButtonText: any, secondButtonText: any}>{
+export class FooterCooking extends React.Component<{firstButtonText: any, secondButtonText: any, thirdButtonText: any}>{
     render() {
         return (
             <ModalFooter className={styles.footer}>
@@ -20,6 +20,7 @@ export class Footer extends React.Component<{firstButtonText: any, secondButtonT
                             <div className={styles.navBlock}>
                                 <Nav.Link className={styles.navItem}>{this.props.firstButtonText}</Nav.Link>
                                 <Nav.Link className={styles.navItem}>{this.props.secondButtonText}</Nav.Link>
+                                <Nav.Link className={styles.navItem}>{this.props.thirdButtonText}</Nav.Link>
                             </div>
                             <div className={styles.navBlock}>
                                 <Nav.Link className={styles.navItem}>О нас</Nav.Link>

@@ -2,13 +2,13 @@ import React from "react";
 import buttonStyles from "../Components/BaseButton/BaseButItem.module.css";
 import {BaseButItem} from "../Components/BaseButton/BaseButItem";
 import {FilterFoodItem} from "../Components/FilterFoodItem/FilterFoodItem";
-import {Footer} from "../Components/Footer/Footer";
 import {CreatingCard} from "../Components/CreatingFoodCard/CreatingCard";
 import {EditingCard} from "../Components/EditingFoodCard/EditingCard";
-import {LeftMenuButtons} from "../Components/LeftMenuItem/LeftMenuButtons";
 import {Calendar} from "../Components/Calendar/Calendar";
 import {NavbarCooking} from "../Components/NavbarCooking/NavbarCooking";
 import {InputCook} from "../Components/InputFieldCooking/InputCook";
+import {LeftMenuCooking} from "../Components/LeftMenuCooking/LeftMenuCooking";
+import {FooterCooking} from "../Components/FooterCooking/FooterCooking";
 
 export class CookingPage extends React.Component{
     render() {
@@ -36,7 +36,7 @@ export class CookingPage extends React.Component{
                     <Calendar/>
                     <div style={{display: "flex", flexDirection: "column", gap: "26px", paddingTop: "2.5px"}}>
                         <BaseButItem w={264} h={44} style={buttonStyles.cardButton} text={"Добавить новое меню"}/>
-                        <LeftMenuButtons/>
+                        <LeftMenuCooking/>
                         <BaseButItem w={264} h={44} style={buttonStyles.cardButton} text={"Изменить"}/>
                     </div>
                 </div>
@@ -55,7 +55,7 @@ export class CookingPage extends React.Component{
                     </div>
                 </div>
             </div>
-            <Footer/>
+            <FooterCooking firstButtonText={"Составить меню"} secondButtonText={"Добавить блюдо"} thirdButtonText={"Выгрузить отчет"}/>
             </body>
             </html>
         )

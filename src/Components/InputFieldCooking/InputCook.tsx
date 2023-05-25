@@ -1,8 +1,8 @@
 import React, {useState} from "react";
 import styles from "./InputCook.module.css"
 import {Button, Card, Image} from "react-bootstrap";
-import pen from "./Img/Pen.png";
-import bin from "./Img/Bin.png";
+import pen from "./Img/Pen.svg";
+import bin from "./Img/Bin.svg";
 
 
 export const InputCook = () => {

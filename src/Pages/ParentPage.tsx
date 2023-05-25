@@ -46,7 +46,7 @@ return (
                 </div>
                 <CardBasket/>
             </div>
-            <Footer/>
+            <Footer firstButtonText={"Заказать питание"} secondButtonText={"Посмотреть заказы"}/>
         </body>
     </html>
     )

@@ -10,16 +10,16 @@
     border-color: white;
 }
 
-input[type="checkbox"] {
+.InputField[type="checkbox"] {
     display: none;
 }
 
-label {
+.InputLabel {
     padding-left: 22px;
     cursor: pointer;
 }
 
-label::before {
+.InputLabel::before {
     content: '';
     display: inline-block;
     width: 30px;
@@ -28,11 +28,11 @@ label::before {
     border: 3px solid #F05654;
 }
 
-input[type="checkbox"]:checked + label::before {
+.InputField[type="checkbox"]:checked + .InputLabel::before {
     content: '';
     background-size: 115%;
     background-position: center;
-    background-image: url("./tick_component.png")
+    background-image: url("tick_component.svg")
 }
 
 .infBlock{

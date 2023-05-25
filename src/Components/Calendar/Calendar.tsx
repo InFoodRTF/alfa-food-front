@@ -2,7 +2,7 @@ import dayjs from "dayjs";
 import React from "react";
 import styles from "./Calendar.module.css"
 import {Image} from "react-bootstrap";
-import calendarIcon from "./Vector.png";
+import calendarIcon from "./Calendar.svg";
 
 
 export class Calendar extends React.Component{
