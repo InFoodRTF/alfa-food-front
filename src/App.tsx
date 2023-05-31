@@ -1,12 +1,12 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./index.css"
-import {CookingPage} from "./Pages/CookingPage";
+import {ParentPersAcc} from "./Pages/ParentPersAcc";
 
 
 function App() {
   return (
-      <CookingPage/>
+      <ParentPersAcc/>
   );
 }
 

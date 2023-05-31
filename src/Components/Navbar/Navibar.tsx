@@ -10,18 +10,33 @@ export class Navibar extends React.Component<{leftButtonText: any, rightButtonTe
         const orderMeals = () => {
             const order = document.getElementById('order')
             const watch = document.getElementById('watch')
-            if (order !== null && watch !== null && watch.classList.contains(styles.red)) {
-                order.classList.toggle(styles.red)
-                watch.classList.remove(styles.red)
+            if (order !== null && watch !== null) {
+                if (watch.classList.contains(styles.red) ||
+                    (!watch.classList.contains(styles.red) && !order.classList.contains(styles.red))) {
+                    order.classList.toggle(styles.red)
+                    watch.classList.remove(styles.red)
+                }
             }
         }
 
         const orderWatch = () => {
             const order = document.getElementById('order')
             const watch = document.getElementById('watch')
-            if (order !== null && watch !== null && order.classList.contains(styles.red)) {
+            if (order !== null && watch !== null) {
+                if (order.classList.contains(styles.red) ||
+                    (!watch.classList.contains(styles.red) && !order.classList.contains(styles.red))) {
+                    order.classList.remove(styles.red)
+                    watch.classList.toggle(styles.red)
+                }
+            }
+        }
+
+        const  onRightBtn = () => {
+            const order = document.getElementById('order')
+            const watch = document.getElementById('watch')
+            if (order !== null && watch !== null) {
                 order.classList.remove(styles.red)
-                watch.classList.toggle(styles.red)
+                watch.classList.remove(styles.red)
             }
         }
 
@@ -39,8 +54,8 @@ export class Navibar extends React.Component<{leftButtonText: any, rightButtonTe
                         </Nav.Item>
                     </Nav.Item>
                     <Nav.Item className={styles.navBlockRight}>
-                        <Nav.Link className={styles.navItemProfile}>Профиль</Nav.Link>
-                        <Nav.Link className={styles.navItemExit}><Image src={exit}></Image></Nav.Link>
+                        <Nav.Link className={styles.navItemProfile} onClick={onRightBtn}>Профиль</Nav.Link>
+                        <Nav.Link className={styles.navItemExit} onClick={onRightBtn}><Image src={exit}></Image></Nav.Link>
                     </Nav.Item>
                 </Nav.Item>
             </Navbar>

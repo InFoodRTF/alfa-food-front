@@ -11,13 +11,15 @@ export class NavbarCooking extends React.Component<{leftButtonText: any, mainBut
             const order = document.getElementById('order')
             const watch = document.getElementById('watch')
             const report = document.getElementById('report')
-            if (order !== null && watch !== null && report !== null && (watch.classList.contains(styles.red) || report.classList.contains(styles.red))) {
+            if (order !== null && watch !== null && report !== null) {
                 order.classList.toggle(styles.red)
-                if (watch.classList.contains(styles.red)) {
+                if (watch.classList.contains(styles.red) || report.classList.contains(styles.red)) {
                     watch.classList.remove(styles.red)
-                }
-                if (report.classList.contains(styles.red)) {
                     report.classList.remove(styles.red)
+                }
+                if (!watch.classList.contains(styles.red) && !order.classList.contains(styles.red)
+                    && !report.classList.contains(styles.red)) {
+                    order.classList.toggle(styles.red)
                 }
             }
         }
@@ -26,13 +28,15 @@ export class NavbarCooking extends React.Component<{leftButtonText: any, mainBut
             const order = document.getElementById('order')
             const watch = document.getElementById('watch')
             const report = document.getElementById('report')
-            if (order !== null && watch !== null && report !== null && (order.classList.contains(styles.red) || report.classList.contains(styles.red))) {
+            if (order !== null && watch !== null && report !== null) {
                 watch.classList.toggle(styles.red)
-                if (order.classList.contains(styles.red)) {
+                if (order.classList.contains(styles.red) || report.classList.contains(styles.red)) {
                     order.classList.remove(styles.red)
-                }
-                if (report.classList.contains(styles.red)) {
                     report.classList.remove(styles.red)
+                }
+                if (!watch.classList.contains(styles.red) && !order.classList.contains(styles.red)
+                    && !report.classList.contains(styles.red)) {
+                    watch.classList.toggle(styles.red)
                 }
             }
         }
@@ -41,14 +45,27 @@ export class NavbarCooking extends React.Component<{leftButtonText: any, mainBut
             const order = document.getElementById('order')
             const watch = document.getElementById('watch')
             const report = document.getElementById('report')
-            if (order !== null && watch !== null && report !== null && (order.classList.contains(styles.red) || watch.classList.contains(styles.red))) {
+            if (order !== null && watch !== null && report !== null) {
                 report.classList.toggle(styles.red)
-                if (watch.classList.contains(styles.red)) {
+                if (watch.classList.contains(styles.red) || order.classList.contains(styles.red)) {
                     watch.classList.remove(styles.red)
-                }
-                if (order.classList.contains(styles.red)) {
                     order.classList.remove(styles.red)
                 }
+                if (!watch.classList.contains(styles.red) && !order.classList.contains(styles.red)
+                    && !report.classList.contains(styles.red)) {
+                    report.classList.toggle(styles.red)
+                }
+            }
+        }
+
+        const  onRightBtn = () => {
+            const order = document.getElementById('order')
+            const watch = document.getElementById('watch')
+            const report = document.getElementById('report')
+            if (order !== null && watch !== null && report !== null) {
+                order.classList.remove(styles.red)
+                watch.classList.remove(styles.red)
+                report.classList.remove(styles.red)
             }
         }
 
@@ -67,8 +84,8 @@ export class NavbarCooking extends React.Component<{leftButtonText: any, mainBut
                         </Nav.Item>
                     </Nav.Item>
                     <Nav.Item className={styles.navBlockRight}>
-                        <Nav.Link className={styles.navItemProfile}>Профиль</Nav.Link>
-                        <Nav.Link className={styles.navItemExit}><Image src={exit}></Image></Nav.Link>
+                        <Nav.Link className={styles.navItemProfile} onClick={onRightBtn}>Профиль</Nav.Link>
+                        <Nav.Link className={styles.navItemExit} onClick={onRightBtn}><Image src={exit}></Image></Nav.Link>
                     </Nav.Item>
                 </Nav.Item>
             </Navbar>
