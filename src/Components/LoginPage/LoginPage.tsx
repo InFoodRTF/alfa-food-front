@@ -2,26 +2,15 @@ import React from "react";
 import Card from 'react-bootstrap/Card';
 import Container from 'react-bootstrap/Container';
 import styles from "./LoginPage.module.css"
-import {
-    MDBBtn,
-    MDBContainer,
-    MDBRow,
-    MDBCol,
-    MDBCard,
-    MDBCardBody,
-    MDBInput,
-    MDBIcon,
-    MDBCheckbox
-}
-    from 'mdb-react-ui-kit';
+
 import logo from './logo.svg'
 import {Button, FormLabel, Image, Form} from "react-bootstrap";
 export class LoginPage extends React.Component {
     render() {
         return (
             <div className="m-5">
-                <Container className={styles.OrderHistoryContainer}>
-                    <Card className={styles.OrderHistoryCard}>
+                <Container className={styles.LoginPageContainer}>
+                    <Card className={styles.LoginPageCard}>
                         <div className="">
                             <div className="text-center m-3 p-3">
                                 <img src={logo} alt="Logo" />
