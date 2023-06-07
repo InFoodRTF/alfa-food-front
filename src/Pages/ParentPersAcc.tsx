@@ -12,7 +12,7 @@ export class ParentPersAcc extends React.Component{
             <html lang="en">
             <head>
                 <meta charSet="UTF-8"/>
-                <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+                <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
                 <title>Школьное питание</title>
             </head>
             <body style={{background:"#F8F8F8"}}>
