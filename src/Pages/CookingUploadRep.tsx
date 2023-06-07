@@ -33,7 +33,7 @@ export class CookingUploadRep extends React.Component{
                     <div style={{display: "flex", flexDirection: "column", gap: "39px"}}>
                         <div style={{display: "flex", flexDirection: "column", gap: "42px"}}>
                             <p className={styles.report}>Выгрузить отчет</p>
-                            <div style={{width: "850px", height: "233px", background: "#D9D9D9"}}></div>
+                            <div style={{width: "845px", height: "233px", background: "#D9D9D9"}}></div>
                         </div>
                         <div>
                             <BaseButItem w={172} h={39} style={buttonStyles.orderButton} text={"Скачать данные"}/>
