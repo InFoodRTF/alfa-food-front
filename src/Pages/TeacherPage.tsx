@@ -36,7 +36,7 @@ export class TeacherPage extends React.Component{
                                 <p className={styles.markClass}>Отметить класс</p>
                                 <FilterFoodItem/>
                                 <div style={{display: "flex", flexDirection: "column", gap: "20px", paddingTop: "2.5px"}}>
-                                    <SearchCard/>
+                                    <SearchCard w={642}/>
                                     <TickCard/>
                                     <div style={{width: "642px", paddingTop: "10px", textAlign: "center"}}>
                                         <BaseButItem w={218} h={39} style={buttonStyles.orderButton} text={"Сохранить изменения"}/>
