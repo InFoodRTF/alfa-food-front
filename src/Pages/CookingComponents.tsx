@@ -24,7 +24,7 @@ export class CookingComponents extends React.Component{
                 marginLeft: "auto",
                 marginRight: "auto",
                 paddingBottom: "60px",
-                minHeight: "580px"
+                minHeight: "620px"
             }}>
                 <SearchCard w={1016}/>
                 <CookingFoodCard/>

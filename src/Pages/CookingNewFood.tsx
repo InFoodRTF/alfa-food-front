@@ -28,7 +28,7 @@ export class CookingNewFood extends React.Component{
                 marginLeft: "auto",
                 marginRight: "auto",
                 paddingBottom: "60px",
-                minHeight: "580px"
+                minHeight: "620px"
             }}>
                 <div style={{display: "flex", flexDirection: "column", gap: "18px"}}>
                     <button className={styles.addButton}>
