@@ -1,0 +1,47 @@
+.cardBlock{
+    display: flex;
+    flex-direction: row;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.inputField{
+    box-sizing: border-box;
+    background: #FFFFFF;
+    border: 1px solid #B3B3B3;
+    border-radius: 10px;
+    padding-left: 20px;
+}
+
+.inputField:focus{
+    outline: 0;
+}
+
+.inputField:focus::placeholder{
+    color: transparent;
+}
+
+.inputField::placeholder{
+    width: 265px;
+    height: 40px;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #000000;
+    align-items: center;
+}
+
+.text{
+    width: 168px;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: right;
+    color: #000000;
+    margin-top: auto;
+    margin-bottom: auto;
+}

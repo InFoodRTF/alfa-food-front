@@ -41,3 +41,25 @@
     background: #D6D6D6 !important;
     border-color: #D6D6D6 !important;
 }
+
+.cardButtonCook{
+    border-radius: 10px;
+    background: #E8E8E8;
+    border-color: #E8E8E8;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    color: #000000;
+}
+
+.cardButtonCook:hover{
+    background: #E8E8E8;
+    border-color: #E8E8E8;
+}
+
+.cardButtonCook:active{
+    background: #D6D6D6 !important;
+    border-color: #D6D6D6 !important;
+}
