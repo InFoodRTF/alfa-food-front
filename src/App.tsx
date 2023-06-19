@@ -7,6 +7,7 @@ import {AdaptFoodCard} from "./Components/TestAdapt/AdaptFoodCard/AdaptFoodCard"
 import {LeftMenu} from "./Components/LeftMenuItem/LeftMenu";
 import {CardBasket} from "./Components/BasketCard/CardBasket";
 import styles from "./AppMain.module.css"
+import {FilterFoodItem} from "./Components/FilterFoodItem/FilterFoodItem";
 
 
 function App() {
@@ -16,7 +17,7 @@ function App() {
             <AdaptNavbar></AdaptNavbar>
             <div className={`container ${styles.flexContainer} gap-xl-4 gap-md-1`}>
                 {/*<LeftMenu/>*/}
-                <div className={"row"}>
+                <div className={`row ${styles.mainContainer}`}>
                     {/*<FilterFoodItem/>*/}
                     <AdaptFoodCard/>
                     <AdaptFoodCard/>

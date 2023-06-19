@@ -44,3 +44,7 @@
   justify-content: center;
 }
 
+.mainContainer{
+  max-width: 540px;
+}
+
