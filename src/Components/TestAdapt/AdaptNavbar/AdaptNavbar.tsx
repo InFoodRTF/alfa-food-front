@@ -43,7 +43,7 @@ export class AdaptNavbar extends React.Component{
         return (
             <nav className={`navbar navbar-expand-md bg-white ${styles.nav}`}>
                 <div className={`container ${styles.navContainer}`}>
-                    <button className={`d-md-none ${styles.navbarToggler}`} type={"button"} data-bs-toggle={"collapse"}
+                    <button className={`2xl:hidden xl:hidden lg:hidden md:hidden flex ${styles.navbarToggler}`} type={"button"} data-bs-toggle={"collapse"}
                             data-bs-target={"#navbarContent"} aria-controls={"navbarContent"} aria-expanded={"false"}>
                         <Image src={menu}/>
                     </button>

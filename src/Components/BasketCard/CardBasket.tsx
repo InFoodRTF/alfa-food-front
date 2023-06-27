@@ -7,13 +7,16 @@ import {Food} from "./Food";
 export class CardBasket extends React.Component{
     render() {
         return(
-            <Card className={`d-md-flex d-none ${styles.basCard}`}>
-                <Card.Title style={{position: "absolute", top: "20px", left: "20px", marginBottom: "0", width: "224px", height: "24px"}}>
+            <div className={"2xl:flex 2xl:flex-col 2xl:min-w-[264px] 2xl:bg-white " +
+                "xl:flex xl:flex-col xl:min-w-[255px] xl:bg-white " +
+                "lg:flex lg:flex-col lg:min-w-[255px] lg:bg-white " +
+                "md:flex md:flex-col md:w-[255px] hidden"}>
+                <Card.Title>
                     <p className={styles.cardTitle}>Корзина</p>
                 </Card.Title>
-                <div style={{display: "flex", flexDirection: "column", gap: "22px", marginTop:"54px"}}>
+                <div>
                     <div className={styles.mealCategory}>
-                        <Card.Text className={styles.cardText}><p>Завтрак</p></Card.Text>
+                        <div className={styles.cardText}><p>Завтрак</p></div>
                         <Food></Food>
                         <Food></Food>
                     </div>
@@ -23,14 +26,14 @@ export class CardBasket extends React.Component{
                         <Food></Food>
                     </div>
                 </div>
-                <div style={{position: "absolute", bottom: "76px", left: "20px", display: "flex", flexDirection: "row", gap: "15px"}}>
-                    <Card.Title className={styles.cardTitle} style={{width: "69px", marginBottom: "0px"}}>Итого:</Card.Title>
-                    <Card.Title className={styles.cardTitle} style={{width: "140px", height: "24px", textAlign: "right", marginBottom: "0px"}}>130 рублей</Card.Title>
+                <div>
+                    <div className={styles.cardTitle}>Итого:</div>
+                    <div className={styles.cardTitle}>130 рублей</div>
                 </div>
-                <div style={{position: "absolute", textAlign: "center", width: "264px", bottom: "19px"}}>
+                <div>
                     <Button variant={''} bsPrefix={''} className={styles.orderButton}>К оформлению</Button>
                 </div>
-            </Card>
+            </div>
         )
     }
 }

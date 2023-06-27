@@ -1,0 +1,7 @@
+.flexContainer {
+  @apply flex row-auto mt-16 justify-center xl:gap-4 md:gap-1;
+}
+
+.mainContainer{
+  @apply grid grid-cols-2 gap-7 max-w-xl-main md:grid-cols-3 md:gap-5;
+}

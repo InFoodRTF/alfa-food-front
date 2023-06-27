@@ -3,34 +3,12 @@
     :root { font-family: 'Inter var', sans-serif; }
 }
 
-.foodCard {
-    max-width: 240px;
-    max-height: 386px;
-    min-width: 150px;
-    min-height: 248px;
-    border-radius: 10px;
-    border-color: white;
-}
-
-.foodCardSm {
-    width: 240px;
-    height: 386px;
-    border-radius: 10px;
-    border-color: white;
+.card{
+    @apply min-w-[150px] min-h-[248px] max-w-[240px] max-h-[386px] bg-white rounded-xl
 }
 
 .imgForm{
-    min-width: 132.35px;
-    min-height: 92.11px;
-    max-width: 210px;
-    max-height: 142.25px;
-    border-radius: 20px;
-}
-
-.imgFormSm{
-    width: 220px;
-    height: 152.25px;
-    border-radius: 27.47px;
+    @apply min-w-[132px] max-w-[210px] min-h-[100px] max-h-[142px] rounded-[20px];
 }
 
 .infBlock{
@@ -39,19 +17,6 @@
     gap: 10px;
     justify-content: left;
     padding: 10px 9px 0;
-}
-
-.infBlockSm{
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    justify-content: left;
-    padding: 15px 9px 0;
-}
-
-.cardBlock{
-    display: flex;
-    flex-direction: column;
 }
 
 .foodName{

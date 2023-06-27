@@ -7,8 +7,7 @@ import food from "./Rectangle 34.png";
 export class AdaptFoodCard extends React.Component{
     render() {
         return(
-            <div className={"col-md-4 col-6"}>
-                <Card className={styles.foodCard}>
+            <div className={styles.card}>
                     <div className={styles.cardBlock}>
                         <div className={styles.infBlock}>
                             <Card.Img className={styles.imgForm} src={food}></Card.Img>
@@ -23,7 +22,6 @@ export class AdaptFoodCard extends React.Component{
                             </Button>
                         </div>
                     </div>
-                </Card>
             </div>
         )
     }
