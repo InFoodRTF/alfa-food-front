@@ -1,0 +1,84 @@
+.nav{
+  @apply bg-white;
+
+  .mainBlock{
+    @apply flex mx-auto max-w-nav-main-adapt h-28 2xl:h-32
+    xl:h-32
+    lg:h-32 lg:max-w-nav-main
+    md:max-w-nav-main-medium;
+
+    .dropDownMenuButton{
+      @apply border-0 bg-white h-[18px] ml-8 mt-[67px]
+      md:hidden;
+    }
+
+    .leftBlock{
+      @apply flex flex-row mx-auto mt-12
+      lg:mx-auto lg:ml-11
+      md:mx-0 md:my-auto md:ml-4
+      sm:mx-auto sm:mt-12;
+
+      .logo{
+        @apply flex flex-row my-auto gap-1
+        xl:min-w-[280px]
+        lg:min-w-[270px]
+        md:gap-3 md:min-w-[177px]
+        sm:gap-2;
+
+        .textLogo{
+          @apply text-black text-[20px] leading-6 font-bold w-[103px]
+        }
+      }
+
+      .mainButtons{
+        @apply hidden
+        xl:gap-10
+        lg:gap-4
+        md:flex md:gap-2 md:px-2 md:py-[10px] md:h-[62px];
+
+        .baseButton{
+          @apply text-black text-[18px] font-semibold text-center py-[10px] px-[20px] leading-5;
+        }
+
+        .redButton{
+          @apply text-white rounded-[10px] bg-[#F05654];
+        }
+      }
+    }
+
+    .rightBlock{
+      @apply hidden
+      lg:mr-10
+      md:flex md:flex-row md:my-auto md:py-[10px] md:gap-3 md:mr-4;
+
+      .profileButton{
+        @apply text-black text-[18px] font-semibold p-[10px];
+      }
+
+      .exitButton{
+        @apply w-6 h-6 my-auto;
+      }
+    }
+
+    .basketButton{
+      @apply w-[30px] h-[30px] mt-[61px] mr-8
+      md:hidden;
+    }
+  }
+}
+
+.dropDownMenu{
+  @apply md:hidden;
+
+  .dropDownButtons{
+    @apply flex flex-col gap-5 pt-[30px] px-4;
+
+    .dropDownBaseButton{
+      @apply text-black text-[18px] font-semibold rounded-[10px] h-[60px] bg-white text-center pt-[14.5px];
+    }
+
+    .dropDownRedButton{
+      @apply text-white bg-[#F05654];
+    }
+  }
+}
